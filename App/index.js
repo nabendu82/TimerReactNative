@@ -42,10 +42,10 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
       <Text style={styles.timerText}>{`${mins}:${secs}`}</Text>
-      <TouchableOpacity onPress={this.toggle} style={styles.button}>
+      <TouchableOpacity onPress={toggle} style={styles.button}>
           <Text style={styles.buttonText}>{isActive ? 'Pause' : 'Start'}</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={this.reset} style={[styles.button, styles.buttonReset]}>
+      <TouchableOpacity onPress={reset} style={[styles.button, styles.buttonReset]}>
           <Text style={[styles.buttonText, styles.buttonTextReset]}>Reset</Text>
       </TouchableOpacity>
     </View>
